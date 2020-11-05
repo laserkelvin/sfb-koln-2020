@@ -128,5 +128,20 @@ h1::after {
 }
 
 .reveal ol {
-    font-size: 1.3rem
+    font-size: 1.8rem
+}
+
+figure {
+    display: inline-block;
+    margin: 0px; /* adjust as needed */
+    padding-left: 5px;
+}
+figure img {
+    margin: auto; 
+    display:block;
+    /* vertical-align: top; */
+}
+figure figcaption {
+    text-align: center;
+    padding-top: 20px;
 }

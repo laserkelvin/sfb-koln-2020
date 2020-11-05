@@ -174,3 +174,7 @@ figcaption {
     padding: 1.1rem;
     font-style: italic;
   }
+
+.round-img {
+    border-radius: 50%;
+}

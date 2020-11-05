@@ -1,6 +1,6 @@
 
 MAIN = slides.md
-CSS = css/wesanderson.css
+CSS = css/modified-tufte.css
 SYNTAX = solarized-light
 TEMPLATE = html/base.html
 SCRIPTS = js/menu.js,js/tableofcontents.js
@@ -9,7 +9,7 @@ PDF_PATH = slides.pdf
 ASSETS = css,figures
 
 FLAGS = $(MAIN) --theme $(CSS) --scripts $(SCRIPTS) --highlight-theme $(SYNTAX) \
-		--template $(TEMPLATE)
+	#	--template $(TEMPLATE)
 
 present:
 	reveal-md $(FLAGS) -w
@@ -19,9 +19,6 @@ pdf:
 
 static:
 	reveal-md $(FLAGS) --static $(STATIC_DIR) --static-dirs=$(ASSETS)
-
-develop: present -w
-
 
 setup:
 	npm -g install reveal-md
